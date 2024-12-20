@@ -19,7 +19,7 @@ const data = {
 
 export default function Home() {
   return (
-    <div className="bg-primary text-primary-dark h-screen flex flex-col items-center justify-between">
+    <div className="bg-primary text-primary-dark  flex flex-col items-center justify-between">
       {/* Main Content */}
       <main>
         {/* Landing section */}
@@ -63,10 +63,11 @@ export default function Home() {
             </div>
           </motion.div>
 
+          {/* Scroll down arrow */}
           <motion.div
-            initial={{ opacity: 0, y: -100 }}
+            initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.35 }}
+            transition={{ duration: 2.0, delay: 0.35}}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
           >
             <Image
@@ -80,7 +81,9 @@ export default function Home() {
         </section>
 
         {/* About section */}
+        <section className="flex h-screen w-screen max-w-7xl">
 
+        </section>
 
       </main>
     </div>
