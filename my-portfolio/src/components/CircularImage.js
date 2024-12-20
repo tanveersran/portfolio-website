@@ -1,7 +1,7 @@
 import Image from "next/image";
 const CircularImage = ({ src, alt }) => {
     return (
-        <Image src={src} alt={alt} width={350} height={350} className="rounded-full border-4 border-secondary-dark" />
+        <Image src={src} alt={alt} width={350} height={350} className="rounded-full border-8 border-secondary-dark" />
     );
 }
 
