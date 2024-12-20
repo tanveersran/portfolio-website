@@ -1,10 +1,20 @@
+import { motion } from "framer-motion";
 /*
 This component is used to display a button with a title.
 Coded by: Tanveer Sran
 */
-const Button = ({title, onClick}) => {
+const Button = ({ title, onClick }) => {
   return (
-    <button onClick={onClick} className="bg-primary-tinted text-primary-dark py-2 px-4 rounded-full w-fit hover:bg-primary ">{title}</button>
+    <motion.button
+      whileHover={{
+        scale: 1.2,
+        transition: { duration: 0.5 },
+      }}
+      whileTap={{ scale: 0.9 }}
+      onClick={onClick} className="bg-primary-tinted text-primary-dark py-2 px-6 rounded-2xl w-fit hover:bg-primary "
+    >
+      {title}
+    </motion.button>
   );
 }
 
