@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 */
 const TripleTextHeading = ({ title, subtitle, description }) => {
   return (
-    <div className={"flex flex-col text-left gap-12 "}>
-      <h1 className="text-6xl">{title}</h1>
-      <h2 className="text-4xl">{subtitle}</h2>
-      <p className="text-2xl">{description}</p>
+    <div className={"flex flex-col gap-4 lg:text-left lg:gap-12 "}>
+      <h1 className="text-4xl lg:text-6xl">{title}</h1>
+      <h2 className="text-3xl lg:text-4xl">{subtitle}</h2>
+      <p className="lg:text-2xl">{description}</p>
     </div>
   );
 }

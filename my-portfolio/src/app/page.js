@@ -23,15 +23,28 @@ export default function Home() {
       {/* Main Content */}
       <main>
         {/* Landing section */}
-        <section className="flex h-screen w-screen max-w-7xl">
+        <section className="flex flex-col h-screen w-screen px-8 justify-center items-center
+        lg:px-0 lg:flex-row lg:max-w-7xl">
           {/* Background component */}
           <HalfCircleComponent />
-          {/* Left side, animates on load */}
+          {/* Top side, animates on load (visible for mobile screen only) */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.35 }}
-            className="flex flex-col text-primary-tinted gap-16 justify-center w-1/2 z-10">
+            className="lg:hidden flex flex-col text-primary-tinted gap-16 justify-center h-1/2 w-screen z-10">
+            <TripleTextHeading
+              title={data.sectionOneTitle}
+              subtitle={data.sectionOneSubtitle}
+              animated
+            />
+          </motion.div>
+          {/* Left side, animates on load (visible for pc screen only) */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.35 }}
+            className="hidden lg:flex flex-col text-primary-tinted gap-16 justify-center w-1/2 z-10">
             <TripleTextHeading
               title={data.sectionOneTitle}
               subtitle={data.sectionOneSubtitle}
@@ -54,8 +67,8 @@ export default function Home() {
             transition={{ duration: 0.55, delay: 0.35 }}
             className="flex flex-col w-1/2 justify-center items-center relative z-10 gap-8">
             <CircularImage src={data.avatarImage} alt={data.avatarImageAlt} />
-            <text className="text-4xl text-primary-dark font-semibold">{data.fullName}</text>
-            <text className="text-2xl text-primary-dark tracking-widest">{data.jobTitle}</text>
+            <span className="text-4xl text-primary-dark font-semibold">{data.fullName}</span>
+            <span className="text-2xl text-primary-dark tracking-widest">{data.jobTitle}</span>
 
             <div className="flex flex-row gap-8">
               <TextImageButton text="LinkedIn" image="/linkedin.png" onClick={() => { window.open("https://www.linkedin.com/in/tanveersran/") }} />
@@ -67,15 +80,15 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2.0, delay: 0.35}}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+            transition={{ duration: 2.0, delay: 0.35 }}
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
           >
             <Image
               src="/down-arrow.png"
               alt="Down arrow"
               width={50}
               height={50}
-              
+
             />
           </motion.div>
         </section>

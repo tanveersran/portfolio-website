@@ -7,8 +7,9 @@ import { motion } from "framer-motion";
 const HalfCircleComponent = () => {
     return (
         <motion.div
-            className="w-1/2 text-primary bg-primary-dark rounded-r-full
-            flex flex-col justify-center px-52 gap-8 absolute top-0 left-0 h-screen -z-1"
+            className="flex absolute top-0 left-0 w-screen bg-primary-dark 
+            h-1/4 -z-1 rounded-b-3xl
+            lg:w-1/2 lg:h-screen lg:rounded-r-full lg:rounded-bl-none"
             initial={{ x: "-100%" }}
             animate={{ x: "0" }}
             transition={{ type: "spring", stiffness: 30 }}
