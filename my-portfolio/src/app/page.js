@@ -43,7 +43,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5}}
+            transition={{ duration: 0.5, delay: 0.3}}
             className="hidden lg:flex flex-col text-primary-tinted gap-16 justify-center w-1/2 z-10">
             <TripleTextHeading
               title={data.sectionOneTitle}
