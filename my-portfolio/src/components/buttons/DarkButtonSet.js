@@ -5,8 +5,8 @@ const DarkButtonSet = () => {
         <>
             <div className="grid grid-cols-2 gap-4 w-fit">
               <Button title="About" />
-              <Button title="Skills" />
               <Button title="Experience" />
+              <Button title="Skills" />
               <Button title="Projects" />
               <Button title="Contact" />
               <Button title="Resume" />

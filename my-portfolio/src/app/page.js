@@ -2,6 +2,7 @@
 import LandingSection from "@/screens/sections/LandingSection";
 import MobileNavSection from "@/screens/sections/MobileNavSection";
 import AboutSection from "@/screens/sections/AboutSection";
+import ExperienceSection from "@/screens/sections/ExperienceSection";
 
 const data = {
   sectionOneTitle: "Hi there.",
@@ -17,6 +18,30 @@ const data = {
     { image: 'https://via.placeholder.com/800x400', caption: 'Caption 1' },
     { image: 'https://via.placeholder.com/800x400', caption: 'Caption 2' },
     { image: 'https://via.placeholder.com/800x400', caption: 'Caption 3' },
+  ],
+  experienceSectionTitle: "Experience",
+  experience: [
+    {
+      companyLogo: "./mto-logo.png",
+      title: "User Experience (UX) Designer",
+      company: "Ministry of Transportation Ontario (MTO)",
+      date: "Jan 2020 - Present",
+      description: "Conducted user research and designed user interfaces for a variety of applications. Worked closely with developers and stakeholders to ensure that designs met user needs and business requirements.",
+    },
+    {
+      companyLogo: "./sheridan-logo.jpeg",
+      title: "Software Development Tutor",
+      company: "Sheridan College",
+      date: "Jan 2018 - Dec 2019",
+      description: "Tutored students in software development concepts and programming languages. Developed and delivered workshops on topics such as web development, mobile app development, and software design principles.",
+    },
+    {
+      companyLogo: "./gbc-logo.jpeg",
+      title: "Live Transcriber ",
+      company: "Accessible Learning Services, George Brown College",
+      date: "Jan 2016 - Dec 2017",
+      description: "Utilized 200+ words per minute typing speed to provide real-time transcription services for students with disabilities. Ensured accurate and timely transcription of lectures, discussions, and other classroom activities.",
+    },
   ]
 }
 
@@ -33,6 +58,9 @@ export default function Home() {
 
         {/* About section */}
         <AboutSection data={data} />
+
+        {/* Experience section */}
+        <ExperienceSection data={data} />
       </main>
     </div>
   );
