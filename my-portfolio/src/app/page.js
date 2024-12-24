@@ -1,11 +1,7 @@
 "use client";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import TripleTextHeading from "../components/TripleTextHeading";
-import Button from "@/components/buttons/TextButton";
-import HalfCircleComponent from "@/components/background/HalfCircleComponent";
-import CircularImage from "@/components/CircularImage";
-import TextImageButton from "@/components/buttons/TextImageButton";
+import LandingSection from "@/screens/sections/LandingSection";
+import MobileNavSection from "@/screens/sections/MobileNavSection";
+import AboutSection from "@/screens/sections/AboutSection";
 
 const data = {
   sectionOneTitle: "Hi there.",
@@ -15,6 +11,13 @@ const data = {
   avatarImageAlt: "Avatar image",
   fullName: "Tanveer Singh Sran",
   jobTitle: "Developer / UX Designer",
+  aboutSectionTitle: "About Me",
+  aboutSectionParagraph: "I'm a developer and UX designer with a passion for creating beautiful and functional applications. I have experience with a variety of technologies and tools, and I'm always looking to learn more. In my free time, I enjoy reading, hiking, and playing video games.",
+  aboutSectionImages: [
+    { image: 'https://via.placeholder.com/800x400', caption: 'Caption 1' },
+    { image: 'https://via.placeholder.com/800x400', caption: 'Caption 2' },
+    { image: 'https://via.placeholder.com/800x400', caption: 'Caption 3' },
+  ]
 }
 
 export default function Home() {
@@ -23,82 +26,13 @@ export default function Home() {
       {/* Main Content */}
       <main>
         {/* Landing section */}
-        <section className="flex flex-col h-screen w-screen px-8 
-        lg:px-0 lg:flex-row lg:max-w-7xl">
-          {/* Background component */}
-          <HalfCircleComponent />
-          {/* Top side, animates on load (visible for mobile screen only) */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="lg:hidden flex flex-col text-primary-tinted justify-center gap-16 h-1/4 w-screen z-10">
-            <TripleTextHeading
-              title={data.sectionOneTitle}
-              subtitle={data.sectionOneSubtitle}
-              animated
-            />
-          </motion.div>
-          {/* Left side, animates on load (visible for pc screen only) */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.3}}
-            className="hidden lg:flex flex-col text-primary-tinted gap-16 justify-center w-1/2 z-10">
-            <TripleTextHeading
-              title={data.sectionOneTitle}
-              subtitle={data.sectionOneSubtitle}
-              description={data.sectionOneDescription}
-              animated
-            />
-            <div className="flex flex-wrap gap-8 max-w-sm">
-              <Button title="About" />
-              <Button title="Skills" />
-              <Button title="Experience" />
-              <Button title="Projects" />
-              <Button title="Contact" />
-              <Button title="Resume" />
-            </div>
-          </motion.div>
-          {/* Right side */}
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.55 }}
-            className="flex flex-col text-center justify-center items-center mt-16 z-10 gap-8
-            lg:w-1/2 lg:mt-0">
-            <CircularImage src={data.avatarImage} alt={data.avatarImageAlt} />
-            <span className="text-2xl text-primary-dark font-semibold">{data.fullName}</span>
-            <span className="text-xl text-primary-dark tracking-widest">{data.jobTitle}</span>
+        <LandingSection data={data} />
 
-            <div className="flex flex-row gap-8">
-              <TextImageButton text="LinkedIn" image="/linkedin.png" onClick={() => { window.open("https://www.linkedin.com/in/tanveersran/") }} />
-              <TextImageButton text="GitHub" image="/github.png" onClick={() => { window.open("https://github.com/tanveersran") }} />
-            </div>
-          </motion.div>
-
-          {/* Scroll down arrow */}
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2.0}}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          >
-            <Image
-              src="/down-arrow.png"
-              alt="Down arrow"
-              width={50}
-              height={50}
-
-            />
-          </motion.div>
-        </section>
+        {/* Navigation button section for mobile */}
+        <MobileNavSection data={data}/>
 
         {/* About section */}
-        <section className="flex h-screen w-screen max-w-7xl">
-
-        </section>
-
+        <AboutSection data={data} />
       </main>
     </div>
   );

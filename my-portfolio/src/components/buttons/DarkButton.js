@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 /*
-This component is used to display a button with a title.
+This component is used to display a dark button with a title.
 Coded by: Tanveer Sran
 */
-const Button = ({ title, onClick }) => {
+const DarkButton = ({ title, onClick }) => {
   return (
     <motion.button
       whileHover={{
@@ -11,11 +11,11 @@ const Button = ({ title, onClick }) => {
         transition: { duration: 0.5 },
       }}
       whileTap={{ scale: 0.9 }}
-      onClick={onClick} className="bg-primary-tinted text-primary-dark py-2 px-6 rounded-2xl w-fit hover:bg-primary "
+      onClick={onClick} className="bg-primary-dark text-primary-tinted py-2 px-6 rounded-2xl w-fit h-fit "
     >
       {title}
     </motion.button>
   );
 }
 
-export default Button;
+export default DarkButton;
