@@ -11,7 +11,7 @@ const HalfCircleComponent = () => {
             className="hidden lg:flex absolute top-0 left-0 bg-primary-dark 
             -z-1 w-1/2 h-screen rounded-r-full rounded-bl-none"
             initial={{x: "-100%"}}
-            animate={{x: "0"}}
+            whileInView={{x: "0"}}
             transition={{ type: "spring", stiffness: 30 }}
         />
         {/* Mobile/tablet view */}

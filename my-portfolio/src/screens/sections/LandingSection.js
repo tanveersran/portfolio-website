@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import HalfCircleComponent from "../../components/background/HalfCircleComponent";
 import TripleTextHeading from "../../components/TripleTextHeading";
@@ -5,17 +6,18 @@ import CircularImage from "../../components/CircularImage";
 import TextImageButton from "../../components/buttons/TextImageButton";
 import LightButtonSet from "../../components/buttons/LightButtonSet";
 import Image from "next/image";
+
 const LandingSection = ({data}) => {
     return (
-        <motion.section className="flex flex-col h-screen w-screen px-8 
+        <motion.section 
+        className="flex flex-col h-screen w-screen px-8 
         lg:px-0 lg:flex-row lg:max-w-7xl">
           {/* Background component */}
           <HalfCircleComponent />
           {/* Top side, animates on load (visible for mobile screen only) */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
+            whileInView={{ opacity: 1 }}
             className="lg:hidden flex flex-col text-primary-tinted justify-center gap-16 h-1/4 w-screen z-10">
             <TripleTextHeading
               title={data.sectionOneTitle}
@@ -26,7 +28,7 @@ const LandingSection = ({data}) => {
           {/* Left side, animates on load (visible for pc screen only) */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3}}
             className="hidden lg:flex flex-col text-primary-tinted gap-16 justify-center w-1/2 z-10">
             <TripleTextHeading
@@ -40,7 +42,7 @@ const LandingSection = ({data}) => {
           {/* Right side */}
           <motion.div
             initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.55 }}
             className="flex flex-col text-center justify-center items-center mt-16 z-10 gap-8
             lg:w-1/2 lg:mt-0">

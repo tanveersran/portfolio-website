@@ -1,8 +1,9 @@
-"use client";
 import LandingSection from "@/screens/sections/LandingSection";
 import MobileNavSection from "@/screens/sections/MobileNavSection";
 import AboutSection from "@/screens/sections/AboutSection";
 import ExperienceSection from "@/screens/sections/ExperienceSection";
+import SkillSection from "@/screens/sections/SkillSection";
+
 
 const data = {
   sectionOneTitle: "Hi there.",
@@ -42,25 +43,59 @@ const data = {
       date: "Jan 2016 - Dec 2017",
       description: "Utilized 200+ words per minute typing speed to provide real-time transcription services for students with disabilities. Ensured accurate and timely transcription of lectures, discussions, and other classroom activities.",
     },
+  ],
+  skillSectionTitle: "Skills",
+  frontEndSkills: [
+    {
+      name: "HTML",
+      icon: "https://via.placeholder.com/100x100?text=HTML",
+    },
+    {
+      name: "CSS",
+      icon: "https://via.placeholder.com/100x100?text=CSS",
+    },
+    {
+      name: "JavaScript",
+      icon: "https://via.placeholder.com/100x100?text=JavaScript",
+    },
+    {
+      name: "React",
+      icon: "https://via.placeholder.com/100x100?text=React",
+    },
+    {
+      name: "Tailwind CSS",
+      icon: "https://via.placeholder.com/100x100?text=Tailwind+CSS",
+    },
+    {
+      name: "Figma",
+      icon: "https://via.placeholder.com/100x100?text=Figma",
+    },
+    {
+      name: "Adobe XD",
+      icon: "https://via.placeholder.com/100x100?text=Adobe+XD",
+    },
   ]
 }
 
 export default function Home() {
   return (
-    <div className="bg-primary text-primary-dark  flex flex-col items-center justify-between">
+    <div className="bg-primary text-primary-dark overflow-x-hidden flex flex-col items-center justify-between">
       {/* Main Content */}
       <main>
         {/* Landing section */}
         <LandingSection data={data} />
 
         {/* Navigation button section for mobile */}
-        <MobileNavSection data={data}/>
+        <MobileNavSection data={data} />
 
         {/* About section */}
         <AboutSection data={data} />
 
         {/* Experience section */}
         <ExperienceSection data={data} />
+
+        {/* Skills section */}
+        <SkillSection data={data} />
       </main>
     </div>
   );

@@ -13,4 +13,5 @@ const TripleTextHeading = ({ title, subtitle, description }) => {
   );
 }
 
+
 export default TripleTextHeading;
