@@ -3,7 +3,8 @@ import MobileNavSection from "@/screens/sections/MobileNavSection";
 import AboutSection from "@/screens/sections/AboutSection";
 import ExperienceSection from "@/screens/sections/ExperienceSection";
 import SkillSection from "@/screens/sections/SkillSection";
-
+import ProjectSection from "@/screens/sections/ProjectSection";
+import ContactSection from "@/screens/sections/ContactSection";
 
 const data = {
   sectionOneTitle: "Hi there.",
@@ -45,7 +46,8 @@ const data = {
     },
   ],
   skillSectionTitle: "Skills",
-  frontEndSkills: [
+  skillSectionDescription: "I bring a variety of skills to the table, including front-end and back-end development, UX design, and essential soft skills.",
+  frontendSkills: [
     {
       name: "HTML",
       icon: "https://via.placeholder.com/100x100?text=HTML",
@@ -74,12 +76,74 @@ const data = {
       name: "Adobe XD",
       icon: "https://via.placeholder.com/100x100?text=Adobe+XD",
     },
-  ]
+  ],
+  backendSkills: [
+    {
+      name: "Node.js",
+      icon: "https://via.placeholder.com/100x100?text=Node.js",
+    },
+    {
+      name: "Express",
+      icon: "https://via.placeholder.com/100x100?text=Express",
+    },
+    {
+      name: "MongoDB",
+      icon: "https://via.placeholder.com/100x100?text=MongoDB",
+    },
+    {
+      name: "SQL",
+      icon: "https://via.placeholder.com/100x100?text=SQL",
+    },
+  ],
+  softSkills: [
+    {
+      name: "Communication",
+      icon: "https://via.placeholder.com/100x100?text=Communication",
+    },
+    {
+      name: "Problem Solving",
+      icon: "https://via.placeholder.com/100x100?text=Problem+Solving",
+    },
+    {
+      name: "Teamwork",
+      icon: "https://via.placeholder.com/100x100?text=Teamwork",
+    },
+    {
+      name: "Time Management",
+      icon: "https://via.placeholder.com/100x100?text=Time+Management",
+    },
+  ],
+  projectSectionTitle: "Projects",
+  projects: [
+    {
+      title: "Project 1",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisl sit amet lorem luctus aliquam. Donec vel libero nec nunc lacinia efficitur.",
+      image: "https://via.placeholder.com/800x400",
+      tags: ["React", "Tailwind CSS", "Figma"],
+    },
+    {
+      title: "Project 2",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisl sit amet lorem luctus aliquam. Donec vel libero nec nunc lacinia efficitur.",
+      image: "https://via.placeholder.com/800x400",
+      tags: ["Node.js", "Express", "MongoDB"],
+    },
+    {
+      title: "Project 3",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisl sit amet lorem luctus aliquam. Donec vel libero nec nunc lacinia efficitur.",
+      image: "https://via.placeholder.com/800x400",
+      tags: ["HTML", "CSS", "JavaScript"],
+    },
+  ],
+  contactSectionTitle: "Let's get in touch",
+  contactSectionSubtitle: "Let's work together!",
+  contactButtonText: "Get in touch",
+  contactButtonLink: "mailto:tanveersran07@gmail.com",
+
 }
 
 export default function Home() {
   return (
-    <div className="bg-primary text-primary-dark overflow-x-hidden flex flex-col items-center justify-between">
+    <div className="bg-primary text-primary-dark overflow-x-clip flex flex-col items-center justify-between">
       {/* Main Content */}
       <main>
         {/* Landing section */}
@@ -96,6 +160,12 @@ export default function Home() {
 
         {/* Skills section */}
         <SkillSection data={data} />
+
+        {/* Projects section */}
+        <ProjectSection data={data} />
+
+        {/* Contact section */}
+        <ContactSection data={data} />
       </main>
     </div>
   );

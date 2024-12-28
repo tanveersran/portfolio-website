@@ -10,8 +10,7 @@ import Image from "next/image";
 const LandingSection = ({data}) => {
     return (
         <motion.section 
-        className="flex flex-col h-screen w-screen px-8 
-        lg:px-0 lg:flex-row lg:max-w-7xl">
+        className="flex flex-col gap-8 px-4 mx-4 pt-8 h-screen w-screen max-w-7xl lg:px-0 lg:mx-0 lg:pt-0 lg:gap-16 lg:flex-row">
           {/* Background component */}
           <HalfCircleComponent />
           {/* Top side, animates on load (visible for mobile screen only) */}
@@ -61,14 +60,28 @@ const LandingSection = ({data}) => {
             initial={{ opacity: 0, y: -25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 2.0, repeat: Infinity, repeatType: "reverse" }}
-            className="absolute bottom-8 left-1/2"
+            className="
+            flex justify-center items-center w-screen h-1/4 z-10 lg:hidden"
           >
             <Image
               src="/down-arrow.png"
               alt="Down arrow"
               width={50}
               height={50}
-
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2.0, repeat: Infinity, repeatType: "reverse" }}
+            className="
+            hidden lg:block lg:absolute lg:bottom-0 lg:left-1/2"
+          >
+            <Image
+              src="/down-arrow.png"
+              alt="Down arrow"
+              width={50}
+              height={50}
             />
           </motion.div>
         </motion.section>
