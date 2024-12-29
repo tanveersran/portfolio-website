@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 This component is used to display a button with a title.
 Coded by: Tanveer Sran
 */
-const LightButton = ({ title, onClick }) => {
+const LightButton = ({ title, onClick, ...otherProps }) => {
   return (
     <motion.button
       whileHover={{

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 This component is used to display a dark button with a title.
 Coded by: Tanveer Sran
 */
-const DarkButton = ({ title, onClick }) => {
+const DarkButton = ({ title, onClick, ...otherProps }) => {
   return (
     <motion.button
       whileHover={{

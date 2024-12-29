@@ -6,15 +6,16 @@ import ImageCarousel from "@/components/carousel/ImageCarousel";
 const AboutSection = ({ data }) => {
     return (
         <motion.section 
+            id="about"
             initial={{ scale: 0.8 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.3 }}
-        className="flex flex-col pt-32 gap-8 px-4 mx-4 h-screen w-screen max-w-7xl lg:px-0 lg:mx-0 lg:gap-16">
+        className="flex flex-col pt-32 gap-8 px-4 mx-4 min-h-screen w-screen max-w-7xl lg:px-0 lg:mx-0" >
             <SectionTitle title={data.aboutSectionTitle} />
             <div className="flex flex-col gap-8">
-                <div className="flex flex-col text-lg lg:flex-row gap-8 lg:text-2xl">
-                    <p className="lg:w-1/2">{data.aboutSectionParagraph}</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptates.</p>
+                <div className="grid grid-rows-1 md:grid-cols-2 text-lg gap-8 lg:text-2xl">
+                    <p>{data.aboutSectionParagraph1}</p>
+                    <p>{data.aboutSectionParagraph2}</p>
                 </div>
                 <ImageCarousel slides={data.aboutSectionImages} />
             </div>

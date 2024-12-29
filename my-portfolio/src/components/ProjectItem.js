@@ -12,7 +12,7 @@ const ProjectItem = ({project}) => {
                 <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg" />
                 <h3 className="text-xl font-bold">{project.title}</h3>
                 <p className="text-center">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 justify-center">
                     {project.tags.map((tag, index) => (
                         <span key={index} className="px-2 py-1 text-sm text-primary-dark bg-primary rounded-md">{tag}</span>
                     ))}

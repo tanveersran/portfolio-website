@@ -20,6 +20,7 @@ const SkillSection = ({ data }) => {
 
     return (
         <motion.section
+            id="skills"
             initial={{ scale: 0.8 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.3 }}
@@ -41,7 +42,7 @@ const SkillSection = ({ data }) => {
             <div className="flex flex-col gap-8 mt-8">
                 <div className="flex text-lg flex-wrap justify-center gap-8 lg:text-2xl">
                     {skillDescriptions[selected].map((skill, index) => (
-                      <SkillItem key={index} skill={skill} />  
+                        <SkillItem key={index} skill={skill} />
                     ))}
                 </div>
             </div>

@@ -6,6 +6,7 @@ import ExperienceCard from "@/components/ExperienceCard";
 const ExperienceSection = ({ data }) => {
     return (
         <motion.section
+            id="experience"
             initial={{ scale: 0.8 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.3 }}
@@ -17,8 +18,8 @@ const ExperienceSection = ({ data }) => {
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     whileHover={{ scale: 1.03 }}
-                    transition={{ duration: 0.3}}
-                    >
+                    transition={{ duration: 0.3 }}
+                >
                     <ExperienceCard experience={experience} />
                 </motion.div>
             ))}
