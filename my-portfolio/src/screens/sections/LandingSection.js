@@ -17,7 +17,7 @@ const LandingSection = ({data}) => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="lg:hidden flex flex-col text-primary-tinted justify-center gap-16 h-1/4 w-screen z-10">
+            className="lg:hidden flex flex-col text-primary-tinted justify-center gap-16 h-1/4  px-4 w-screen z-10">
             <TripleTextHeading
               title={data.sectionOneTitle}
               subtitle={data.sectionOneSubtitle}

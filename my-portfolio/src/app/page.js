@@ -9,9 +9,9 @@ import { data } from "@/data/data";
 
 export default function Home() {
   return (
-    <div className="bg-primary text-primary-dark overflow-x-clip flex flex-col items-center justify-between">
+    <div>
       {/* Main Content */}
-      <main>
+      <main className="bg-primary text-primary-dark overflow-x-clip flex flex-col items-center justify-between">
         {/* Landing section */}
         <LandingSection data={data} />
 
