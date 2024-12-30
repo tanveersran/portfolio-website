@@ -150,7 +150,7 @@ export const data = {
   ],
   portfolioLink: "https://drive.google.com/file/d/1qJUF7-MbNzJeuiaRaQzxachXJcoZ153G/view?usp=sharing",
   contactSectionTitle: "Let's get in touch",
-  contactSectionSubtitle: "I can be reached via email at tanveesran07@gmail.com. Feel free to reach out if you have any questions or would like to discuss a project.",
+  contactSectionSubtitle: "I can be reached via email at tanveersran07@gmail.com. Feel free to reach out if you have any questions or would like to discuss a project.",
   contactButtonText: "Get in touch",
   contactButtonLink: "mailto:tanveersran07@gmail.com",
   footerText: "Designed and developed ❤️ by Tanveer Sran",
