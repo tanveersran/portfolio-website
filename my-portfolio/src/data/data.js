@@ -136,6 +136,7 @@ export const data = {
       link: "https://xd.adobe.com/view/3505843c-5c8d-4f48-b218-d492c3eb4837-6056/?fullscreen"
     },
   ],
+  portfolioLink: "https://drive.google.com/file/d/1qJUF7-MbNzJeuiaRaQzxachXJcoZ153G/view?usp=sharing",
   contactSectionTitle: "Let's get in touch",
   contactSectionSubtitle: "I can be reached via email at tanveesran07@gmail.com. Feel free to reach out if you have any questions or would like to discuss a project.",
   contactButtonText: "Get in touch",

@@ -1,6 +1,6 @@
 import Button from "./DarkButton";
 
-const DarkButtonSet = () => {
+const DarkButtonSet = ({portfolioLink}) => {
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
         if (element) {
@@ -15,7 +15,7 @@ const DarkButtonSet = () => {
             <Button title="Skills" onClick={() => scrollToSection("skills")} />
             <Button title="Projects" onClick={() => scrollToSection("projects")} />
             <Button title="Contact" onClick={() => scrollToSection("contact")} />
-            <Button title="Resume" onClick={() => scrollToSection("resume")} />
+            <Button title="Resume" onClick={() => window.open(portfolioLink)} />
         </div>
     );
 }

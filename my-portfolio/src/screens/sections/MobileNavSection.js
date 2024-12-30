@@ -11,7 +11,7 @@ const MobileNavSection = ({ data }) => {
       transition={{ duration: 0.3 }}
       className="flex flex-col pt-32 gap-32 px-4 mx-4 h-screen w-screen max-w-7xl lg:hidden">
       <SectionTitle title={data.sectionOneDescription} />
-      <DarkButtonSet />
+      <DarkButtonSet portfolioLink={data.portfolioLink} />
     </motion.section>
   )
 }
