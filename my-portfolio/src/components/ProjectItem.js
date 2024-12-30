@@ -6,7 +6,7 @@ const ProjectItem = ({ project }) => {
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.3 }}
-            className="flex flex-col items-center justify-center gap-4 p-4 bg-primary-tinted border-primary-dark border-2 rounded-lg shadow-md"
+            className="flex flex-col text-center items-center justify-center gap-4 p-4 bg-primary-tinted border-primary-dark border-2 rounded-lg shadow-md"
         >
 
             <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg" />
