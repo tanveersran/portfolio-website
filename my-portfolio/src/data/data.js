@@ -141,5 +141,7 @@ export const data = {
   contactSectionSubtitle: "I can be reached via email at tanveesran07@gmail.com. Feel free to reach out if you have any questions or would like to discuss a project.",
   contactButtonText: "Get in touch",
   contactButtonLink: "mailto:tanveersran07@gmail.com",
+  footerText: "Designed and developed ❤️ by Tanveer Sran",
+  footerText2: "© 2024 Tanveer Singh Sran. All rights reserved.",
 
 }

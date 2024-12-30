@@ -4,6 +4,7 @@ import { useState } from "react";
 import SectionTitle from "@/components/SectionTitle";
 import FormInput from "@/components/input/FormInput";
 import DarkButton from "@/components/buttons/DarkButton";
+import Copyright from "@/components/Copyright";
 
 const ContactSection = ({ data }) => {
     const [formData, setFormData] = useState({
@@ -42,6 +43,7 @@ const ContactSection = ({ data }) => {
                 <FormInput name="message" isTextArea={true} placeholder="Message" required onChange={handleChange} />
                 <DarkButton title={data.contactButtonText} type="submit" />
             </form>
+            <Copyright data={data}/>
         </motion.section>
     );
 }
