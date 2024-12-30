@@ -66,10 +66,6 @@ export const data = {
       icon: "/react-native.png",
     },
     {
-      name: "Spring Boot",
-      icon: "/spring-boot.png",
-    },
-    {
       name: "Tailwind CSS",
       icon: "/tailwind.png",
     },
@@ -86,6 +82,10 @@ export const data = {
     {
       name: "Node.js",
       icon: "/node-js.png",
+    },
+    {
+      name: "Spring Boot",
+      icon: "/spring-boot.png",
     },
     {
       name: "Express",
