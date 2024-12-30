@@ -50,12 +50,24 @@ export const data = {
       icon: "/css.svg",
     },
     {
+      name: "Java",
+      icon: "/java.png",
+    },
+    {
       name: "JavaScript",
       icon: "/javascript.png",
     },
     {
       name: "React",
       icon: "/react.svg",
+    },
+    {
+      name: "React Native",
+      icon: "/react-native.png",
+    },
+    {
+      name: "Spring Boot",
+      icon: "/spring-boot.png",
     },
     {
       name: "Tailwind CSS",
