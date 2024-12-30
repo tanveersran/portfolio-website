@@ -10,7 +10,7 @@ import Image from "next/image";
 const LandingSection = ({data}) => {
     return (
         <motion.section 
-        className="flex flex-col gap-8 px-4 mx-4 pt-8 h-screen w-screen max-w-7xl lg:px-0 lg:mx-0 lg:pt-0 lg:gap-16 lg:flex-row">
+        className="flex flex-col gap-8 px-4 mx-4 pt-8 h-screen max-w-4xl lg:px-0 lg:mx-0 lg:pt-0 lg:flex-row">
           {/* Background component */}
           <HalfCircleComponent />
           {/* Top side, animates on load (visible for mobile screen only) */}
@@ -36,7 +36,7 @@ const LandingSection = ({data}) => {
               description={data.sectionOneDescription}
               animated
             />
-            <LightButtonSet portfolioLink={data.portfolioLink}/>
+            <LightButtonSet portfolioLink={data.portf}/>
           </motion.div>
           {/* Right side */}
           <motion.div
@@ -46,8 +46,8 @@ const LandingSection = ({data}) => {
             className="flex flex-col text-center justify-center items-center mt-16 z-10 gap-8
             lg:w-1/2 lg:mt-0">
             <CircularImage src={data.avatarImage} alt={data.avatarImageAlt} />
-            <span className="text-2xl text-primary-dark font-semibold">{data.fullName}</span>
-            <span className="text-xl text-primary-dark tracking-widest">{data.jobTitle}</span>
+            <span className="text-xl text-primary-dark font-semibold">{data.fullName}</span>
+            <span className="text-lg text-primary-dark tracking-widest">{data.jobTitle}</span>
 
             <div className="flex flex-row gap-8">
               <TextImageButton text="LinkedIn" image="/linkedin.png" onClick={() => { window.open("https://www.linkedin.com/in/tanveersran/") }} />

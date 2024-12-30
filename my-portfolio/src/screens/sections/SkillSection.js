@@ -24,10 +24,10 @@ const SkillSection = ({ data }) => {
             initial={{ scale: 0.8 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.3 }}
-            className="flex flex-col pt-32 gap-8 px-4 mx-4 min-h-screen w-screen max-w-7xl lg:px-0 lg:mx-0 lg:gap-16"
+            className="flex flex-col pt-32 gap-8 px-4 mx-4 min-h-screen w-screen max-w-4xl lg:px-0 lg:mx-0 lg:gap-16"
         >
             <SectionTitle title={data.skillSectionTitle} />
-            <p className="text-lg lg:text-2xl">{data.skillSectionDescription}</p>
+            <p className="text-lg">{data.skillSectionDescription}</p>
             <div className="flex flex-row gap-8 flex-wrap align-middle justify-center">
                 {["Frontend", "Backend", "Soft"].map((category) => (
                     <SelectableButton
