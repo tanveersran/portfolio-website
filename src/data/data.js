@@ -20,22 +20,30 @@ export const data = {
       companyLogo: "./mto-logo.png",
       title: "User Experience (UX) Designer",
       company: "Ministry of Transportation Ontario (MTO)",
-      date: "Sep 2023 - Dec 2023 | May 2024 - Aug 2024 (Co-op)",
+      date: "Sep 2023 - Dec 2023 · 4 mos | May 2024 - Aug 2024 · 4 mos (Co-op)",
       description: "Conducted user research and designed user interfaces for a variety of applications. Worked closely with developers and stakeholders to ensure that designs met user needs and business requirements.",
     },
     {
       companyLogo: "./sheridan-logo.jpeg",
       title: "Software Development Tutor",
       company: "Sheridan College",
-      date: "Jan 2024 - Apr 2023 (Co-op) | May 2023 - Apr 2024",
+      date: "Jan 2024 - Apr 2023 · 4 mos (Co-op) | May 2023 - Apr 2024 (Contract PT) · 1 yr",
       description: "Tutored students in software development concepts and programming languages. Developed and delivered workshops on topics such as web development, mobile app development, and software design principles.",
+    },
+    {
+      companyLogo: "./gdg-logo.png",
+      title: "Design Team Lead",
+      company: "Google Developer Student Club - Sheridan College",
+      date: "Sep 2023 - Dec 2024 · 1 yr 4 mos",
+      description: "Led a team of designers in creating promotional materials, social media graphics, and other design assets for the club. Collaborated with other team leads to ensure consistent branding and messaging across all platforms.",
+      
     },
     {
       companyLogo: "./gbc-logo.jpeg",
       title: "Live Transcriber ",
       company: "Accessible Learning Services, George Brown College",
       date: "Sep 2024 - Present",
-      description: "Utilized 200+ words per minute typing speed to provide real-time transcription services for students with disabilities. Ensured accurate and timely transcription of lectures, discussions, and other classroom activities.",
+      description: "Utilized 175+ words per minute typing speed to provide real-time transcription services for students with disabilities. Ensured accurate and timely transcription of lectures, discussions, and other classroom activities.",
     },
   ],
   skillSectionTitle: "Skills",
@@ -64,6 +72,10 @@ export const data = {
     {
       name: "React Native",
       icon: "/react-native.png",
+    },
+    {
+      name: "Angular",
+      icon: "/angular.png",
     },
     {
       name: "Tailwind CSS",
@@ -122,7 +134,7 @@ export const data = {
   projects: [
     {
       title: "GigJet - where tasks meet talent",
-      description: "GigJet is a full stack capstone winning iOS and Android application catering to two user bases: taskers and talent seekers. Taskers can post tasks they need help with, and talent seekers can browse tasks and apply to complete them. The app features a chat system, task tracking, and geolocation.",
+      description: "A capstone winning full stack iOS and Android application catering to two user bases: taskers and talent seekers. Taskers can post tasks they need help with, and talent seekers can browse tasks and apply to complete them. The app features a chat system, task tracking, and geolocation sharing.",
       image: "./gigjet.png",
       tags: ["React Native", "Tailwind CSS", "Firebase", "Figma"],
       link: "https://www.youtube.com/watch?v=M1adKEKeFLo",
