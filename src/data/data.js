@@ -162,9 +162,10 @@ export const data = {
   ],
   portfolioLink: "https://drive.google.com/file/d/1qJUF7-MbNzJeuiaRaQzxachXJcoZ153G/view?usp=sharing",
   contactSectionTitle: "Let's get in touch",
-  contactSectionSubtitle: "I can be reached via email at tanveersran07@gmail.com. Feel free to reach out if you have any questions or would like to discuss a project.",
+  contactEmail: "tanveersran07@gmail.com",
+  contactSectionParagraph: "I'm open to new opportunities! Want to work together or have a project in mind? Feel free to send me a message using the form below.",
   contactButtonText: "Get in touch",
-  contactButtonLink: "mailto:tanveersran07@gmail.com",
+  contactSectionImage: "./contact-icon.png",
   footerText: "Designed and developed ❤️ by Tanveer Sran",
   footerText2: "© 2024 Tanveer Singh Sran. All rights reserved.",
 
