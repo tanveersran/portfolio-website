@@ -78,6 +78,14 @@ export const data = {
       icon: "/angular.png",
     },
     {
+      name: "C",
+      icon: "/c.png",
+    },
+    {
+      name: "C#",
+      icon: "/c-sharp.png",
+    },
+    {
       name: "Tailwind CSS",
       icon: "/tailwind.png",
     },
