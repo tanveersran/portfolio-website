@@ -17,7 +17,7 @@ const HalfCircleComponent = () => {
         {/* Mobile/tablet view */}
         <motion.div
             className="flex absolute top-0 left-0 w-screen bg-primary-dark 
-        h-1/4 -z-1 lg:hidden"
+        h-1/4 md:h-1/6 -z-1 lg:hidden"
             initial={{y: "-100%"}}
             animate={{y: "0"}}
             transition={{ type: "spring", stiffness: 30 }}
