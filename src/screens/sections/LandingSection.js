@@ -36,7 +36,7 @@ const LandingSection = ({data}) => {
               description={data.sectionOneDescription}
               animated
             />
-            <LightButtonSet portfolioLink={data.portf}/>
+            <LightButtonSet portfolioLink={data.portfolioLink}/>
           </motion.div>
           {/* Right side */}
           <motion.div
