@@ -27,7 +27,7 @@ export const data = {
       companyLogo: "./sheridan-logo.jpeg",
       title: "Software Development Tutor",
       company: "Sheridan College",
-      date: "Jan 2024 - Apr 2023 · 4 mos (Co-op) | May 2023 - Apr 2024 (Contract PT) · 1 yr",
+      date: "Jan 2024 - Apr 2023 · 4 mos (Co-op) | May 2023 - Apr 2024 · 1 yr (Contract PT)",
       description: "Tutored students in software development concepts and programming languages. Developed and delivered workshops on topics such as web development, mobile app development, and software design principles.",
     },
     {
