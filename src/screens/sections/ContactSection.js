@@ -33,7 +33,7 @@ const ContactSection = ({ data }) => {
             initial={{ scale: 0.8 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.3 }}
-            className="flex flex-col pt-32 gap-8 px-4 mx-4 min-h-screen w-screen max-w-4xl lg:px-0 lg:mx-0 lg:gap-12"
+            className="flex flex-col pt-32 gap-8 px-4 mx-4 min-h-screen w-screen max-w-screen-lg lg:px-0 lg:mx-0 lg:gap-12"
         >
             <SectionTitle title={data.contactSectionTitle} />
             <div className="flex flex-row items-center gap-4">
