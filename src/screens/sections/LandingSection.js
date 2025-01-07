@@ -10,7 +10,7 @@ import Image from "next/image";
 const LandingSection = ({data}) => {
     return (
         <motion.section 
-        className="flex flex-col gap-8 px-4 mx-4 pt-8 min-h-screen max-w-4xl lg:px-0 lg:mx-0 lg:pt-0 lg:gap-24 lg:flex-row">
+        className="flex flex-col gap-8 px-4 mx-4 pt-8 min-h-screen max-w-screen-lg lg:px-0 lg:mx-0 lg:pt-0 lg:gap-24 lg:flex-row">
           {/* Background component */}
           <HalfCircleComponent />
           {/* Top side, animates on load (visible for mobile screen only) */}
