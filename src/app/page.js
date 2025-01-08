@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       {/* Main Content */}
-      <main className="bg-primary text-primary-dark overflow-x-clip flex flex-col items-center justify-between">
+      <main className=" text-center bg-primary text-primary-dark overflow-x-clip flex flex-col items-center justify-between">
         {/* Landing section */}
         <LandingSection data={data} />
 
