@@ -11,12 +11,12 @@ const FormInput = ({ label, isTextArea = false, ...otherProps }) => {
             {label && <label htmlFor={otherProps.name}>{label}</label>}
             {isTextArea ? (
                 <textarea
-                    className="p-2 border-2 border-primary-dark rounded-md md:w-2/3 lg:w-3/5"
+                    className="p-2 border-2 border-primary-dark rounded-md"
                     {...otherProps}
                 />
             ) : (
                 <input
-                    className="p-2 border-2 border-primary-dark rounded-md md:w-1/2 lg:w-1/3"
+                    className="p-2 border-2 border-primary-dark rounded-md"
                     {...otherProps}
                 />
             )}

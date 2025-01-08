@@ -1,6 +1,6 @@
 const SectionTitle = ({ title }) => {
     return (
-        <span className="text-4xl text-primary-dark font-semibold">{title}</span>
+        <span className="flex justify-center text-4xl text-primary-dark font-semibold ">{title}</span>
     );
 }
 
