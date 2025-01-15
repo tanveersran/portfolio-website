@@ -1,7 +1,7 @@
 const ExperienceCard = ({ experience }) => {
   return (
     <div className="items-center bg-primary-tinted text-primary-dark rounded-xl shadow-lg border-primary-dark border-2 lg:grid lg:grid-cols-2">
-      <div className="bg-primary-dark text-primary-tinted flex flex-col justify-center items-center gap-8 p-8 ">
+      <div className="bg-primary-dark text-primary-tinted flex flex-col rounded-t-lg rounded-b-xl justify-center items-center gap-8 p-8">
         <img
           src={experience.companyLogo}
           alt={experience.title}
