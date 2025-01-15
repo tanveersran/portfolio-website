@@ -7,7 +7,7 @@ const SkillItem = ({ skill }) => {
         whileHover={{ scale: 1.03 }}
         transition={{ duration: 0.3}}
         className="flex flex-col gap-4 text-center justify-center items-center">
-            <img src={skill.icon} alt={skill.name} className="w-24 h-24 rounded-[32]" />
+            <img src={skill.icon} alt={skill.name} className="w-24 h-24 rounded-3xl" />
             <p className="text-primary-dark font-semibold text-2xl">{skill.name}</p>
         </motion.div>
     );
